@@ -1,0 +1,15 @@
+meta {
+  name: Get job by jobid
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base-url}}/jobs/2
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

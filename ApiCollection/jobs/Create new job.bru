@@ -1,0 +1,26 @@
+meta {
+  name: Create new job
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base-url}}/jobs
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title" : "Senior Software Developer Needed",
+    "description" : "Test Description",
+    "minSalary" : "30000",
+    "maxSalary" : "40000",
+    "location" : "Waldorf",
+    "companyId" : 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

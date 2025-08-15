@@ -1,0 +1,24 @@
+meta {
+  name: Update review to a company
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{base-url}}/reviews/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "title": "Review 1",
+    "description": "Desc 1",
+    "rating": 3.0,
+    "companyId": 1
+  }
+}
+
+settings {
+  encodeUrl: true
+}

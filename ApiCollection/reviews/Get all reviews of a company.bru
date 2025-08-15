@@ -1,0 +1,19 @@
+meta {
+  name: Get all reviews of a company
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base-url}}/reviews?companyId=1
+  body: none
+  auth: inherit
+}
+
+params:query {
+  companyId: 1
+}
+
+settings {
+  encodeUrl: true
+}

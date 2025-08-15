@@ -1,0 +1,26 @@
+meta {
+  name: Update job by jobId
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{base-url}}/jobs/1
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id" : 1,
+    "title" : "Software Architect Needed",
+    "description" : "Test Description",
+    "minSalary" : "30000",
+    "maxSalary" : "40000",
+    "location" : "New York"
+  }
+}
+
+settings {
+  encodeUrl: true
+}

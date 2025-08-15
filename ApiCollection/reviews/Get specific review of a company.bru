@@ -1,0 +1,15 @@
+meta {
+  name: Get specific review of a company
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{base-url}}/reviews/1
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+}

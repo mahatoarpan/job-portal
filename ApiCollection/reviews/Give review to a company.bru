@@ -1,0 +1,27 @@
+meta {
+  name: Give review to a company
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{base-url}}/reviews?companyId=1
+  body: json
+  auth: inherit
+}
+
+params:query {
+  companyId: 1
+}
+
+body:json {
+  {
+    "title": "Review 1",
+    "description": "Desc 1",
+    "rating": 5.0
+  }
+}
+
+settings {
+  encodeUrl: true
+}
