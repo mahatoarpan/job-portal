@@ -1,9 +1,9 @@
 job-service:
-  url: http://localhost:8082
+  url: http://job-service
 company-service:
-  url: http://localhost:8081
+  url: http://company-service
 review-service:
-  url: http://localhost:8083
+  url: http://review-service:8083
 
 server:
   port: 8082
@@ -21,7 +21,7 @@ spring:
 
   # Postgres
   datasource:
-    url: jdbc:postgresql://localhost:5432/job-portal
+    url: jdbc:postgresql://postgres:5432/jobportal
     username: admin
     password: password
 
@@ -35,7 +35,5 @@ spring:
 
 eureka:
   client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    register-with-eureka: true
-    fetch-registry: true
+    register-with-eureka: false
+    fetch-registry: false

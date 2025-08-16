@@ -5,20 +5,20 @@ meta {
 }
 
 post {
-  url: {{base-url}}/reviews?companyId=1
+  url: {{base-url}}/reviews?companyId=2
   body: json
   auth: inherit
 }
 
 params:query {
-  companyId: 1
+  companyId: 2
 }
 
 body:json {
   {
     "title": "Review 1",
     "description": "Desc 1",
-    "rating": 5.0
+    "rating": 4.0
   }
 }
 

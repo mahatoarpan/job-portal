@@ -6,12 +6,13 @@
         <groupId>com.test</groupId>
         <artifactId>Job-Portal</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pom.xml</relativePath>
     </parent>
 	<artifactId>service-reg</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>service-reg</name>
 	<description>Service Registry</description>
+    <packaging>jar</packaging>
 	<url/>
 	<licenses>
 		<license/>
